@@ -1,0 +1,30 @@
+<article id="projects">
+    <div class="h4 text-center mb-4 title">PROJECTS</div>
+
+    <div class="container-fluid py-5" >
+        <div class="container">
+              <div class="row">
+        
+                    <ng-container *ngFor="let project of projects">
+                        <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="blog-entry">
+                                <div class="card">
+                                    <img class="card-img-top" src={{project.imgUrl}} onerror="this.src = 'assets/images/gif.gif'" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">{{project.title}}</h4>
+                                        <h5 class="card-text"><b>Technology :</b> {{project.worktech}} </h5>
+                                        <div style="margin-top: 20px;">
+                                        <a href={{project.githurl}} class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold " style=" width:100%; height: auto; ">Github Link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+                
+        
+            </div>
+        </div>
+
+</article>
